@@ -13,7 +13,9 @@ Your input will from a file in which the first line will contain the window size
 numbers separated by space. You need to output the smallest numbers in each window separated by space.
 
 Sample Input:
+
 3
+
 10 4 18 2 6 19 24 1 20
 
 Expected Output:
