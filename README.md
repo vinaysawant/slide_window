@@ -7,7 +7,7 @@ size of 3
 10 4 18 2 6 19 24 1 20
 The output must be
 
-4222611
+4 2 2 2 6 1 1
 
 Your input will from a file in which the first line will contain the window size N, the second line will contain a stream of
 numbers separated by space. You need to output the smallest numbers in each window separated by space.
@@ -19,4 +19,4 @@ Sample Input:
 10 4 18 2 6 19 24 1 20
 
 Expected Output:
-4222611
+4 2 2 2 6 1 1
