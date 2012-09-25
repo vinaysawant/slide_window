@@ -1,12 +1,5 @@
-#!/usr/bin/evn python
+#!/usr/bin/env python
 from collections import deque
-
-fname=raw_input("Enter filename: => ")      
-f=open(fname,"r") 	
-window_size=int(f.readline())
-sequence=f.readline()
-s=sequence.split()
-sequence=map(int,s)
 
 def slide_min(window_size,sequence):
     window = deque()
@@ -18,5 +11,15 @@ def slide_min(window_size,sequence):
             window.popleft()
         yield window[0][0]
 
-for x in slide_min(window_size,sequence):
-		print x,
+if __name__=='__main__':
+	fname=raw_input("Enter filename: => ")
+	f=open(fname,"r")
+	window_size=int(f.readline())
+	sequence=f.readline()
+	s=sequence.split()
+	sequence=map(int,s)
+	j=0
+	for x in slide_min(window_size,sequence):
+			j=j+1
+			if j>2:
+				print x,
